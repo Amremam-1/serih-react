@@ -1,5 +1,5 @@
 import React from "react"
-import { HiOutlineMenuAlt1 } from "react-icons/hi"
+import { RiMenu2Fill } from "react-icons/ri";
 import DropMenu from "../dropMenu/DropMenu"
 import LanguageBtn from "../languageBtn/LanguageBtn"
 import { useState } from "react"
@@ -24,7 +24,7 @@ const Header = ({ chooseListHandler, isOpen }) => {
       <div className={styles.container}>
         <div className={styles.btns}>
           <button onClick={toggleMenuHandler} className={styles.menu}>
-            <HiOutlineMenuAlt1 />
+            <RiMenu2Fill />
           </button>
           <LanguageBtn />
         </div>
