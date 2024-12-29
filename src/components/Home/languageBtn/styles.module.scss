@@ -1,0 +1,32 @@
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .ar,
+  .en,
+  .active {
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: #db8427;
+    }
+  }
+  .ar {
+  }
+  .icon,
+  .iconFlipped {
+    font-size: 22px;
+    fill: #12a28b;
+    transform: rotate(180deg);
+  }
+  .iconFlipped {
+  }
+  .en {
+  }
+  .active {
+    color: #db8427;
+  }
+}

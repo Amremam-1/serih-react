@@ -1,0 +1,139 @@
+.body {
+  width: 100%;
+  padding-bottom: 40px;
+
+  .container {
+    position: relative;
+    .top {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      .image {
+        padding: 32px;
+        width: 350px;
+        .logoText {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .title {
+        color: #fff;
+        color: #12a28b;
+        font-size: 40px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+    }
+    .contactsList {
+      padding: 0px 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      color: #fff;
+      @media (max-width: 576px) {
+        gap: 16px;
+      }
+      @media (max-width: 450px) {
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .contactItem {
+        .link {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          transition: 0.2s;
+          opacity: 1;
+          .text {
+            color: #dce8aa;
+          }
+          svg {
+            font-size: 22px;
+          }
+          .whatsapp {
+            font-size: 24px;
+            color: #25d366;
+          }
+          @media (max-width: 370px) {
+            .text {
+              font-size: 15px;
+            }
+            svg {
+              font-size: 18px;
+            }
+          }
+          .insta {
+            color: #c13584;
+          }
+          .phone {
+            color: #12a28b;
+          }
+          .tiktok {
+            color: #ee1d52;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .tabs {
+      padding: 20px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: #fff;
+      .tab,
+      .tabActive {
+        text-align: center;
+        background-color: #db8427;
+        border: 1px solid #db8427;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.2s;
+        opacity: 1;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      @media (max-width: 768px) {
+        gap: 8px;
+        padding: 20px;
+        .tab,
+        .tabActive {
+          flex: 1;
+          padding: 4px 10px;
+        }
+      }
+      @media (max-width: 576px) {
+        gap: 4px;
+        padding: 20px;
+        .tab,
+        .tabActive {
+          flex: 1;
+          padding: 4px 6px;
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 450px) {
+        gap: 4px;
+        .tab,
+        .tabActive {
+          padding: 4px 6px;
+          font-size: 12px;
+        }
+      }
+      .tabActive {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #db8427;
+      }
+    }
+  }
+}

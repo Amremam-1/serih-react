@@ -1,0 +1,58 @@
+.dropMenu,
+.dropMenuEn {
+  position: absolute;
+  top: calc(100% + 14px);
+  top: calc(50px + 2px);
+  // right: 0px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 300px;
+  z-index: 1001;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: 0.3s;
+  width: 100%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  .menuList {
+    padding: 4px 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    .menuItem {
+      color: #fff;
+      padding: 4px 16px;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .icon {
+        font-size: 28px;
+        color: #bc6639;
+        color: #db8427;
+      }
+      .text {
+        color: #dce8aa;
+        transition: 0.2s;
+      }
+      &:hover {
+        background-color: #f2f2f2;
+        .text {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.dropMenu {
+  right: 0;
+}
+.dropMenuEn {
+  left: 0;
+}
+
+.dropMenuHidden {
+  display: none;
+}
