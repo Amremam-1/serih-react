@@ -628,7 +628,7 @@ export const menuList = [
     price: "3",
     currencyAr: "ريال",
     currencyEn: "Sr",
-    imgs: ["01.png"],
+    imgs: ["../../images/list/pepsi.jpg"],
   },
   {
     id: "Drinks-011",
