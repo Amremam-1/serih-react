@@ -494,7 +494,8 @@ export const menuList = [
     price: "8",
     currencyAr: "ريال",
     currencyEn: "Sr",
-    imgs: ["01.png"],
+
+    imgs: ["../../images/list/beans.jpg"],
   },
   {
     id: "Grill-008",
@@ -506,7 +507,7 @@ export const menuList = [
     price: "7",
     currencyAr: "ريال",
     currencyEn: "Sr",
-    imgs: ["01.png"],
+    imgs: ["../../images/list/lentil.jpg"],
   },
   //   ----------------------Drinks------------------------------
   {
